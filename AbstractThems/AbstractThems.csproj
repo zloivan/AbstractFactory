@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{181E7C02-3FB9-4137-8C81-CBDD4CB3B0C8}</ProjectGuid>
+    <ProjectGuid>{B3CBA44B-4897-4F5B-A5CB-6FD52AE9F7B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>AbstractFactory</AssemblyName>
+    <RootNamespace>AbstractThems</RootNamespace>
+    <AssemblyName>AbstractThems</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,29 +44,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractCover.cs" />
+    <Compile Include="AbstractButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="AbstractFactory.cs" />
-    <Compile Include="AbstractWater.cs" />
-    <Compile Include="AbstractBottle.cs" />
+    <Compile Include="AbstractWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="black\BlackButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="black\BlackFactory.cs" />
+    <Compile Include="black\BlackWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blue\BlueFactory.cs" />
+    <Compile Include="blue\BlueWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blue\BlueButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Client.cs" />
-    <Compile Include="Coca-Cola\CocaColaBottle.cs" />
-    <Compile Include="Coca-Cola\CocaColaCover.cs" />
-    <Compile Include="Coca-Cola\CocaColaFactory.cs" />
-    <Compile Include="Coca-Cola\CocaColaWater.cs" />
-    <Compile Include="Fanta\FantaBottle.cs" />
-    <Compile Include="Fanta\FantaCover.cs" />
-    <Compile Include="Fanta\FantaFactory.cs" />
-    <Compile Include="Fanta\FantaWater.cs" />
-    <Compile Include="Pepsi\PepsiBottle.cs" />
-    <Compile Include="Pepsi\PepsiCover.cs" />
-    <Compile Include="Pepsi\PepsiFactory.cs" />
-    <Compile Include="Pepsi\PepsiWater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

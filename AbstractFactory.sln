@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{181E7C02-3FB9-4137-8C81-CBDD4CB3B0C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractThems", "AbstractThems\AbstractThems.csproj", "{B3CBA44B-4897-4F5B-A5CB-6FD52AE9F7B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{181E7C02-3FB9-4137-8C81-CBDD4CB3B0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{181E7C02-3FB9-4137-8C81-CBDD4CB3B0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{181E7C02-3FB9-4137-8C81-CBDD4CB3B0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CBA44B-4897-4F5B-A5CB-6FD52AE9F7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CBA44B-4897-4F5B-A5CB-6FD52AE9F7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CBA44B-4897-4F5B-A5CB-6FD52AE9F7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CBA44B-4897-4F5B-A5CB-6FD52AE9F7B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
